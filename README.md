@@ -8,7 +8,7 @@
 
 ### Getting Gin
 
-run the following Go command to install the `gin` package:
+run the following Go command to install the `go-tomcat` package:
 
 ```sh
 $ go get -u github.com/alikWu/go-tomcat

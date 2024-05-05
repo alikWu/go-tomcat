@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"go-tomcat/internal"
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 const (

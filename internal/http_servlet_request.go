@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"go-tomcat/internal/cookie"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal/cookie"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type HttpServletRequest interface {

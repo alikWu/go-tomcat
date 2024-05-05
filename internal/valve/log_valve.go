@@ -3,9 +3,9 @@ package valve
 import (
 	"fmt"
 
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/logger"
 	"github.com/bytedance/sonic"
-	"go-tomcat/internal"
-	"go-tomcat/internal/logger"
 )
 
 type LogValve struct {

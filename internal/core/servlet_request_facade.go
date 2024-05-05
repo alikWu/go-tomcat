@@ -3,7 +3,7 @@ package core
 import (
 	"io"
 
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type servletRequestFacade struct {

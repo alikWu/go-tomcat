@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"go-tomcat/internal/connector"
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal/connector"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 type Http11Processor struct {

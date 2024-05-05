@@ -1,6 +1,6 @@
 package internal
 
-import "go-tomcat/servlet"
+import "github.com/alikWu/go-tomcat/servlet"
 
 const (
 	BEFORE_INIT_EVENT     = "beforeInit"

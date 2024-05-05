@@ -3,9 +3,9 @@ package startup
 import (
 	"fmt"
 
-	"go-tomcat/internal/connector/http"
-	"go-tomcat/internal/core"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal/connector/http"
+	"github.com/alikWu/go-tomcat/internal/core"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type BootStrap struct {

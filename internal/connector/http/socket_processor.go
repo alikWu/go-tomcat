@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net"
 
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 type SocketProcessorRecycler interface {

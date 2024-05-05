@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 const (

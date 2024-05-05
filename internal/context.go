@@ -1,6 +1,6 @@
 package internal
 
-import "go-tomcat/servlet"
+import "github.com/alikWu/go-tomcat/servlet"
 
 //Tomcat 内的 Context 组件跟 Servlet 规范中的 ServletContext 接口的区别：
 //Servlet规范中ServletContext表示web应用的上下文环境

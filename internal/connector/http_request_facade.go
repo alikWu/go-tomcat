@@ -3,9 +3,9 @@ package connector
 import (
 	"io"
 
-	"go-tomcat/internal"
-	"go-tomcat/internal/cookie"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/cookie"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 /**

@@ -1,6 +1,6 @@
 package internal
 
-import "go-tomcat/servlet"
+import "github.com/alikWu/go-tomcat/servlet"
 
 type Wrapper interface {
 	Container

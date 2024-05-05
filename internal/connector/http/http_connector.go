@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"go-tomcat/internal"
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 type HttpConnectorImpl struct {

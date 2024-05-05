@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"go-tomcat/internal"
-	"go-tomcat/internal/session"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/session"
 )
 
 type SessionKeeper struct {

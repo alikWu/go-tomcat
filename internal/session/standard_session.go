@@ -3,7 +3,7 @@ package session
 import (
 	"time"
 
-	"go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal"
 )
 
 type standardSession struct {

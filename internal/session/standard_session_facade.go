@@ -1,7 +1,7 @@
 package session
 
 import (
-	"go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal"
 )
 
 type standardSessionFacade struct {

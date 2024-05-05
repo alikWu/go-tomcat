@@ -3,8 +3,8 @@ package connector
 import (
 	"io"
 
-	"go-tomcat/internal"
-	"go-tomcat/internal/cookie"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/cookie"
 )
 
 type HttpResponseFacade struct {

@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/pkg/errors"
-	"go-tomcat/internal"
-	"go-tomcat/internal/logger"
-	"go-tomcat/internal/util"
-	"go-tomcat/internal/valve"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal/util"
+	"github.com/alikWu/go-tomcat/internal/valve"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type StandardWrapperValve struct {

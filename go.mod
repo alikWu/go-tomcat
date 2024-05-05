@@ -1,4 +1,4 @@
-module go-tomcat
+module github.com/alikWu/go-tomcat
 
 go 1.18
 

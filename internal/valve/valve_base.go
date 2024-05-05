@@ -1,6 +1,6 @@
 package valve
 
-import "go-tomcat/internal"
+import "github.com/alikWu/go-tomcat/internal"
 
 type ValveBase struct {
 	container internal.Container

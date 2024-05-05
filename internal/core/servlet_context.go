@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type servletContext struct {

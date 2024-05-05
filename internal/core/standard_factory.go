@@ -1,9 +1,9 @@
 package core
 
 import (
-	"go-tomcat/internal"
-	"go-tomcat/servlet"
-	"go-tomcat/webapps/test"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/webapps/test"
 )
 
 type standardFactory struct {

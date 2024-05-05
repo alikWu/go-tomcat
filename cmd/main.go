@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"go-tomcat/internal/startup"
-	"go-tomcat/servlet"
-	"go-tomcat/webapps"
-	"go-tomcat/webapps/test"
+	"github.com/alikWu/go-tomcat/internal/startup"
+	"github.com/alikWu/go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/webapps"
+	"github.com/alikWu/go-tomcat/webapps/test"
 )
 
 func main() {

@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"strings"
 
-	"go-tomcat/internal"
-	"go-tomcat/internal/cookie"
-	"go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/cookie"
+	"github.com/alikWu/go-tomcat/internal/logger"
 )
 
 const lineBreak = "\r\n"

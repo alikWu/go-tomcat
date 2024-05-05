@@ -3,7 +3,7 @@ package test
 import (
 	"fmt"
 
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type TestFilter struct {

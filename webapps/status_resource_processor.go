@@ -4,8 +4,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"go-tomcat/internal/logger"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type StaticResourceProcessor struct {

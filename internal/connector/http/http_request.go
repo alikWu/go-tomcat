@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"go-tomcat/internal"
-	"go-tomcat/internal/cookie"
-	"go-tomcat/internal/core"
-	"go-tomcat/internal/logger"
-	"go-tomcat/internal/util"
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/internal"
+	"github.com/alikWu/go-tomcat/internal/cookie"
+	"github.com/alikWu/go-tomcat/internal/core"
+	"github.com/alikWu/go-tomcat/internal/logger"
+	"github.com/alikWu/go-tomcat/internal/util"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 const (

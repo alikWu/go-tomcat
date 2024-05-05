@@ -3,7 +3,7 @@ package core
 import (
 	"fmt"
 
-	"go-tomcat/servlet"
+	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type ApplicationFilterChain struct {

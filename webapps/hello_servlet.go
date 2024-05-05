@@ -1,14 +1,11 @@
 package webapps
 
 import (
-	"fmt"
-
 	"github.com/alikWu/go-tomcat/internal/logger"
 	"github.com/alikWu/go-tomcat/servlet"
 )
 
 type HelloServlet struct {
-	count int
 }
 
 func (h *HelloServlet) GetServletName() string {
@@ -27,9 +24,6 @@ func (h *HelloServlet) Service(request servlet.ServletRequest, response servlet.
 	if err != nil {
 		logger.LogError(request.GetServletContext().GetContext(), "HelloServlet#Service writeBack err:", err)
 	}
-	fmt.Println("att1", request.GetAttribute("att1"))
-	request.SetAttribute("att1", h.count)
-	h.count++
 	return err
 }
 

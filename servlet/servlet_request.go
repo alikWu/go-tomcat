@@ -26,6 +26,7 @@ type ServletRequest interface {
 	//atribute is from  sesison, cookie
 	GetAttribute(name string) interface{}
 	GetAttributeNames() []string
+	//set attribute into session
 	SetAttribute(name string, value interface{})
 	RemoveAttribute(name string)
 	//todo support async

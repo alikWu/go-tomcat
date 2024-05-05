@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/alikWu/go-tomcat/internal"
 	"github.com/alikWu/go-tomcat/internal/logger"
+	"github.com/google/uuid"
 )
 
 type HttpConnectorImpl struct {
@@ -62,7 +62,7 @@ func (hc *HttpConnectorImpl) GetContainer() internal.Context {
 
 func (hc *HttpConnectorImpl) ListenConnect() error {
 	ctx := context.Background()
-	logger.LogInfo(ctx, "HttpConnector start")
+	fmt.Println("HttpConnector start-------")
 	listen, err := net.Listen("tcp", hc.port)
 	if err != nil {
 		logger.LogError(ctx, "HttpConnectorImpl#Await net.Listen err", err)
@@ -76,7 +76,6 @@ func (hc *HttpConnectorImpl) ListenConnect() error {
 			return err
 		}
 
-		fmt.Println("HttpConnectorImpl new conn, remotePort:", conn.RemoteAddr())
 		curCtx := context.WithValue(ctx, logger.TraceID, uuid.New())
 		processor := hc.getProcessor()
 

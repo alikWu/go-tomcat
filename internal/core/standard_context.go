@@ -71,6 +71,7 @@ func (sc *StandardContext) Start() {
 	sc.AddListenerDef(cld)
 	sc.ListenerStart()
 
+	fmt.Println("Container start!!!!!")
 	sc.fireContainerEvent("Container start", sc)
 }
 
@@ -102,7 +103,6 @@ func (sc *StandardContext) AddListenerDef(listenerDef *ContainerListenerDef) {
 }
 
 func (sc *StandardContext) ListenerStart() bool {
-	fmt.Println("Listener start .....")
 	for _, def := range sc.listenerDefs {
 		listener := sc.listenerFactory.CreateContainerListener(def.GetListenerName())
 		sc.AddContainerListener(listener)
@@ -175,11 +175,11 @@ func (sc *StandardContext) RegisterFilter(filter servlet.Filter) {
 		urlPattern := filterMatch.GetUrlPattern()
 
 		if len(servletName) == 0 && len(urlPattern) == 0 {
-			fmt.Println("StandardContext add filterMap without servletName and urlPattern")
+			logger.LogWarn(sc.GetServletContext().GetContext(), "StandardContext add filterMap without servletName and urlPattern")
 			continue
 		}
 		if len(servletName) > 0 && len(urlPattern) > 0 {
-			fmt.Println("StandardContext add filterMap with servletName and urlPattern")
+			logger.LogWarn(sc.GetServletContext().GetContext(), "StandardContext add filterMap with servletName and urlPattern")
 			continue
 		}
 

@@ -1,8 +1,6 @@
 package valve
 
 import (
-	"fmt"
-
 	"github.com/alikWu/go-tomcat/internal"
 	"github.com/alikWu/go-tomcat/internal/logger"
 	"github.com/bytedance/sonic"
@@ -37,6 +35,5 @@ func (lv *LogValve) Invoke(request internal.HttpServletRequest, response interna
 		return err
 	}
 	logger.LogInfof(ctx.GetContext(), "LogValve request=%s, response=%s", string(reqBytes), string(resBytes))
-	fmt.Println(fmt.Sprintf("LogValve request=%s, response=%s", string(reqBytes), string(resBytes)))
 	return nil
 }

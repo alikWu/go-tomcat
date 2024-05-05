@@ -1,14 +1,12 @@
 package core
 
 import (
-	"fmt"
-
-	"github.com/pkg/errors"
 	"github.com/alikWu/go-tomcat/internal"
 	"github.com/alikWu/go-tomcat/internal/logger"
 	"github.com/alikWu/go-tomcat/internal/util"
 	"github.com/alikWu/go-tomcat/internal/valve"
 	"github.com/alikWu/go-tomcat/servlet"
+	"github.com/pkg/errors"
 )
 
 type StandardWrapperValve struct {
@@ -58,7 +56,7 @@ func (swv *StandardWrapperValve) createFilterChain(request internal.HttpServletR
 		}
 		filter := context.GetFilter(filterMap.GetFilterName())
 		if filter == nil {
-			fmt.Println("filter is nil")
+			logger.LogWarn(request.GetServletContext().GetContext(), "filter is nil")
 			continue
 		}
 
@@ -73,7 +71,7 @@ func (swv *StandardWrapperValve) createFilterChain(request internal.HttpServletR
 		}
 		filter := context.GetFilter(filterMap.GetFilterName())
 		if filter == nil {
-			fmt.Println("filter is nil")
+			logger.LogWarn(request.GetServletContext().GetContext(), "filter is nil")
 			continue
 		}
 
